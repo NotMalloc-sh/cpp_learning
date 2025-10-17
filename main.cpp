@@ -1,10 +1,16 @@
 #include <iostream>
 using namespace std;
 
+string sayhi(string name){
+    cout << "HI " << name;
+}
+
 int main(){
-    int n;
-    cout << "greetings" << endl;
-    cin >> n;
-    cout << n;
+    string name;
+    cout << "whats ur name" << endl;
+    cout << ">>";
+    cin >> name;
+
+    cout << sayhi(name);
 }
 
