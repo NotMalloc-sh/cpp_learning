@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-string sayhi(string name){
+void sayhi(string name){
     cout << "HI " << name;
 }
 
@@ -11,6 +11,6 @@ int main(){
     cout << ">>";
     cin >> name;
 
-    cout << sayhi(name);
+    sayhi(name);
 }
 
