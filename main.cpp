@@ -2,13 +2,13 @@
 using namespace std;
 
 void sayhi(string name){
-    cout << "HI " << name;
+    cout << "HI " << name << endl;
 }
 
 int main(){
     string name;
     cout << "whats ur name" << endl;
-    cout << ">>";
+    cout << ">> ";
     cin >> name;
 
     sayhi(name);
