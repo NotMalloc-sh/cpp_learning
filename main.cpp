@@ -1,16 +1,26 @@
 #include <iostream>
 using namespace std;
 
-void sayhi(string name){
-    cout << "HI " << name << endl;
+int factorial(int n){
+    if(n < 0){
+        cerr << "[-] just positive numbers!" << endl;
+        return -1;
+    }
+    int answer = 1;
+    for(int i=1; i <= n; i++){
+        answer = answer * i;
+    }
+    return answer;
 }
 
 int main(){
-    string name;
-    cout << "whats ur name" << endl;
-    cout << ">> ";
-    cin >> name;
+    int n;
 
-    sayhi(name);
+    cout << "[?] Choose a number: ";
+    cin >> n;
+
+    int result = factorial(n);
+    cout << "[+]result: " << result << endl;
+
+
 }
-
