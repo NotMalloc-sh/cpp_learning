@@ -22,5 +22,4 @@ int main(){
     int result = factorial(n);
     cout << "[+]result: " << result << endl;
 
-
 }
